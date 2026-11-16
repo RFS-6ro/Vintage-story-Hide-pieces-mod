@@ -1,0 +1,11 @@
+{
+  "blockhelp-cut-hide": "Hold to cut into hide pieces",
+  "item-hidepiece-raw": "Raw hide piece",
+  "itemdesc-hidepiece-raw": "One leather-worth of raw hide. Seal in 2 L limewater for 20 hours or 2 L diluted borax for 18 hours. Spoils like a raw hide. Sneak + right-click to stack on the ground.",
+  "item-hidepiece-soaked": "Soaked hide piece",
+  "itemdesc-hidepiece-soaked": "Scrape with a knife in the crafting grid. Sneak + right-click to stack on the ground.",
+  "item-hidepiece-scraped": "Scraped hide piece",
+  "itemdesc-hidepiece-scraped": "Seal in 2 L weak tannin for 72 hours. Sneak + right-click to stack on the ground.",
+  "item-hidepiece-prepared": "Prepared hide piece",
+  "itemdesc-hidepiece-prepared": "Seal in 2 L strong tannin for 108 hours to make one normal leather. Sneak + right-click to stack on the ground."
+}

@@ -16,7 +16,7 @@ Download **hidepieces_1.1.0.zip** from [Releases](https://github.com/RFS-6ro/Vin
 3. Keep only one version of Hide Pieces installed.
 4. For multiplayer, install the mod on both the server and every client.
 
-The installable mod is the `hidepieces_1.1.0.zip` release attachment. GitHub's automatically generated source archives contain this repository's documentation.
+The installable mod is the `hidepieces_1.1.0.zip` release attachment. The source on `main` can be built using the instructions below. The original `v1.1.0` tag predates source publication, so its automatic source archives contain documentation only.
 
 ## Cutting hides
 
@@ -56,13 +56,43 @@ Crouch + right-click on a solid surface to place or add pieces. Each processing 
 - This release covers raw hides and normal leather. Salting and sturdy leather are outside its scope.
 - The mod references the game's existing shapes, textures and sounds. Game assemblies and textures are not bundled.
 
+## Building from source
+
+The source on `main` implements Hide Pieces 1.1.0. Download or clone this branch to build it.
+
+Requirements:
+
+- Windows and PowerShell.
+- An installed copy of Vintage Story **1.22.3**.
+- A .NET SDK and the .NET 10 runtime available through `dotnet`. The build was verified with SDK 9.0.305 and runtime 10.0.9.
+
+From the repository folder, run:
+
+```powershell
+.\build.ps1 -GamePath 'C:\Path\To\Vintagestory'
+```
+
+Supply the actual game installation folder. The script reads the game's API, Survival and Newtonsoft.Json assemblies locally; they are not distributed in this repository.
+
+The script compiles `code/HidePieces.cs` to `source/HidePieces.dll`, then creates `dist/hidepieces_1.1.0.zip` and its SHA-256 file. The ZIP includes the mod assets, instructions and MIT license. It does not install the mod or change the game. Move an existing archive aside before rebuilding the same version.
+
+Repository layout:
+
+- `code/HidePieces.cs`: cutting interaction and mod registration.
+- `source/modinfo.json`: version and required game dependencies.
+- `source/assets/hidepieces/`: item definition, translations, ground-storage patch and recipes.
+- `source/README.md`: instructions included in the mod ZIP.
+- `build.ps1`: local compile and packaging script.
+
+Compiled binaries, release archives, local backups and verification data are ignored by Git. Obtain the ready-to-install ZIP from Releases.
+
 ## Feedback
 
 Use this repository's Issues tab to report problems. Include the game and mod versions, steps to reproduce, and relevant log errors. Remove personal information from logs before sharing.
 
 ## Author and repository
 
-Created for Daniil, with AI-assisted development. This repository hosts documentation and downloadable releases. The C# source is not published here.
+Created for Daniil, with AI-assisted development. The C# source, recipes, item definitions and translations are available here under the MIT license.
 
 ## License
 

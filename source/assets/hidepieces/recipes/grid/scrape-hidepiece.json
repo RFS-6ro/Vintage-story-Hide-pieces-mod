@@ -1,0 +1,27 @@
+{
+  "name": "hidepieces:scrape",
+  "ingredientPattern": "K,H",
+  "shapeless": true,
+  "width": 1,
+  "height": 2,
+  "ingredients": {
+    "K": {
+      "type": "item",
+      "tags": [
+        "tool-knife"
+      ],
+      "isTool": true,
+      "toolDurabilityCost": 1
+    },
+    "H": {
+      "type": "item",
+      "code": "hidepieces:hidepiece-soaked",
+      "quantity": 1
+    }
+  },
+  "output": {
+    "type": "item",
+    "code": "hidepieces:hidepiece-scraped",
+    "quantity": 1
+  }
+}

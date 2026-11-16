@@ -1,0 +1,8 @@
+[
+  {
+    "file": "game:blocktypes/groundstorage.json",
+    "op": "add",
+    "path": "/behaviors/-",
+    "value": { "name": "HidePiecesCutting" }
+  }
+]

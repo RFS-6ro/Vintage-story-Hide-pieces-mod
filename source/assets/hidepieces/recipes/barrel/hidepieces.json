@@ -1,0 +1,90 @@
+[
+  {
+    "code": "hidepieces:soak-lime",
+    "sealHours": 20,
+    "ingredients": [
+      {
+        "type": "item",
+        "code": "game:limewaterportion",
+        "litres": 2,
+        "consumeLitres": 2
+      },
+      {
+        "type": "item",
+        "code": "hidepieces:hidepiece-raw",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "type": "item",
+      "code": "hidepieces:hidepiece-soaked",
+      "stackSize": 1
+    }
+  },
+  {
+    "code": "hidepieces:soak-borax",
+    "sealHours": 18,
+    "ingredients": [
+      {
+        "type": "item",
+        "code": "game:dilutedboraxportion",
+        "litres": 2,
+        "consumeLitres": 2
+      },
+      {
+        "type": "item",
+        "code": "hidepieces:hidepiece-raw",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "type": "item",
+      "code": "hidepieces:hidepiece-soaked",
+      "stackSize": 1
+    }
+  },
+  {
+    "code": "hidepieces:prepare",
+    "sealHours": 72,
+    "ingredients": [
+      {
+        "type": "item",
+        "code": "game:weaktanninportion",
+        "litres": 2,
+        "consumeLitres": 2
+      },
+      {
+        "type": "item",
+        "code": "hidepieces:hidepiece-scraped",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "type": "item",
+      "code": "hidepieces:hidepiece-prepared",
+      "stackSize": 1
+    }
+  },
+  {
+    "code": "hidepieces:tan",
+    "sealHours": 108,
+    "ingredients": [
+      {
+        "type": "item",
+        "code": "game:strongtanninportion",
+        "litres": 2,
+        "consumeLitres": 2
+      },
+      {
+        "type": "item",
+        "code": "hidepieces:hidepiece-prepared",
+        "quantity": 1
+      }
+    ],
+    "output": {
+      "type": "item",
+      "code": "game:leather-normal-plain",
+      "stackSize": 1
+    }
+  }
+]

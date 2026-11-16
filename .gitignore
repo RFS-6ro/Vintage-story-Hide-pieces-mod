@@ -1,0 +1,17 @@
+# Build outputs
+/dist/
+/bin/
+/obj/
+*.dll
+*.pdb
+
+# Local verification data and backups
+/verification/
+/backups/
+
+# Editor and user settings
+/.vs/
+/.idea/
+/.vscode/
+*.user
+*.suo
